@@ -4,4 +4,5 @@
 @import './abstract/reset.css';
 @import './abstract/variables.css';
 
-/* Importing Elements */
+/* Importing Components */
+@import './components/header.css';

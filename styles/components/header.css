@@ -1,0 +1,58 @@
+@import '../abstract/variables.css';
+
+.header {
+    width: 100vdw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 3px 15px;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.8rem;
+}
+
+.header__logo--icon {
+    width: 45px;
+}
+
+.header__logo--website {
+    font-family: "Outfit", sans-serif;
+    text-decoration: none;
+    background: linear-gradient(to right, #fb6107,#76b518, #5c8001);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    
+}
+.header__menu {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    font-size: 1.4rem;
+    color: #555;
+
+}
+.header__menu__dropdown {
+    position: relative;
+}
+.header__menu__dropdown::after {
+    content: url("../../assets/icons/dropdown-menu.png");
+    transform: scale(0.5);
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: -15%;
+    left: 92%;
+}
+.header__menu--link {
+    color: inherit;
+    text-decoration: none;
+    padding: 3px 5px;
+    border: 2px solid #a5be00;
+}
