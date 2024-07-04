@@ -3,7 +3,7 @@
 .page-header {
     height: 90dvh;
     /* background: linear-gradient(to right, var(--apple-green), var(--apple-green2)); */
-    background-color: var(--background-pg-header);
+    background-color: var(--bg-pg-header);
     display: flex;
     flex-direction: column;
     justify-content: center;

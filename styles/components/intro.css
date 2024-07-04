@@ -1,0 +1,53 @@
+@import '../abstract/variables.css';
+
+.intro {
+    background-color: var(--bg-intro-section);
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    padding: 20px 0;
+
+    color: var(--cream);
+
+}
+.intro__img,
+.intro__container {
+    width: 40%;
+    height: 350px;
+}
+.intro__img {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.intro__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    text-shadow: 0 0 3px var(--black-shadow);
+}   
+.intro__heading {
+    font-size: 3rem;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+.intro__desc {
+    width: 75%;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+}
+.intro__link {
+    margin-top: 10px;
+    
+}
+

@@ -7,4 +7,9 @@
     box-shadow: 0 0 15px var(--lime);
     color: var(--white);
     border-radius: 8px;
+    transition: transform 350ms;
+}
+.button:hover {
+    transform: translateY(1px);
+    box-shadow: 0 0 22px var(--lime);
 }

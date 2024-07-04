@@ -5,6 +5,8 @@
 
   --white: #fff;
   --black: #111;
+  --font-black: #333;
+  --font-color: #283618;
 
   --cream: #f0f3bd;
   --orange: #fb6107;
@@ -14,7 +16,9 @@
 
   --grey: #555;
 
-  --background-pg-header: #283618;
+  /* Backgrounds */
+  --bg-pg-header: #283618;
+  --bg-intro-section: #283618;
 
   /* Shadow */
   --black-shadow: rgba(0, 0, 0, 0.450);
