@@ -4,15 +4,24 @@
     height: 90dvh;
     /* background: linear-gradient(to right, var(--apple-green), var(--apple-green2)); */
     background-color: var(--bg-pg-header);
-    background: url('../../assets/images/landpage-bg.png');
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 10dvh;
     font-size: 1.8rem;
     gap: 20px;
     color: var(--cream);
     position: relative;
+}
+.page-header::after {
+
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('../../assets/images/landpage-bg.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+        
 }
 
 .page-header__heading {
@@ -26,4 +35,10 @@
 }
 .page-header__link {
     margin-top: 20px;
+}
+
+.page-header__heading,
+.page-header__desc,
+.page-header__link {
+    transform: translateX(15vw);
 }
