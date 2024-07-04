@@ -1,0 +1,35 @@
+@import '../abstract/variables.css';
+
+.main-services {
+    width: 100vw;
+}
+
+.main-services__heading {
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 20px;
+    
+    background: linear-gradient(to right, var(--lime) 0%, var(--apple-green) 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+    font-size: 2rem;
+
+}
+
+.main-services__list {
+
+    width: 80%;
+    margin: auto;
+    padding-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-services__item--link {
+    font-size: 1.6rem;
+    
+}
