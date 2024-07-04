@@ -1,2 +1,30 @@
 @import '../abstract/variables.css';
 
+.about-ireland {
+    background-color: var(--white);
+    color: var(--font-color);
+
+    max-width: 680px;
+    margin: auto;
+
+    padding: 40px 0;
+}
+.about-ireland__heading {
+    color: var(--apple-green);
+    font-size: 2rem;
+    width: fit-content;
+    border-bottom: 2px solid var(--apple-green);
+}
+.about-ireland__desc {
+    font-size: 1.125rem;
+    margin-top: 10px;
+}
+.about-ireland__img {
+    margin: 20px auto;
+    width: 560px;
+    height: 320px;
+    border-radius: 8px;
+    box-shadow: 0 0 7px var(--black-shadow);
+
+    background-color: blueviolet;
+}
