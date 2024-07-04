@@ -4,6 +4,7 @@
     height: 90dvh;
     /* background: linear-gradient(to right, var(--apple-green), var(--apple-green2)); */
     background-color: var(--bg-pg-header);
+    background: url('../../');
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,7 +12,7 @@
     font-size: 1.8rem;
     gap: 20px;
     color: var(--cream);
-
+    position: relative;
 }
 
 .page-header__heading {
