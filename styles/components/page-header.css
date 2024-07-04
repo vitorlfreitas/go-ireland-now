@@ -17,10 +17,6 @@
 
 .page-header__heading {
     font-size: 3.5rem;
-    font-family: "Outfit", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
     text-shadow: 0 2px 4px var(--black);
 }
 

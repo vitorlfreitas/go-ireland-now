@@ -4,6 +4,7 @@
 @import './abstract/reset.css';
 @import './abstract/variables.css';
 @import './utils/button.css';
+@import './utils/heading.css';
 
 /* Importing Components */
 @import './components/header.css';
