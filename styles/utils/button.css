@@ -1,0 +1,10 @@
+@import '../abstract/variables.css';
+
+.button {
+    padding: 10px 25px;
+    width: fit-content;
+    background-color: var(--apple-green);
+    box-shadow: 0 0 15px var(--lime);
+    color: var(--white);
+    border-radius: 8px;
+}

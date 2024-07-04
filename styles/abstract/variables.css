@@ -12,6 +12,13 @@
   --apple-green2: #a5be00;
   --lime: #5c8001;
 
+  --grey: #555;
+
+  --background-pg-header: #283618;
+
+  /* Shadow */
+  --black-shadow: rgba(0, 0, 0, 0.450);
+
 }
 
 /*IS IT NECESSARY???  Imports of fonts family from Google fonts, weight 400, variable styles*/

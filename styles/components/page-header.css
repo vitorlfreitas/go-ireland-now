@@ -1,0 +1,32 @@
+@import '../abstract/variables.css';
+
+.page-header {
+    height: 90dvh;
+    /* background: linear-gradient(to right, var(--apple-green), var(--apple-green2)); */
+    background-color: var(--background-pg-header);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10dvh;
+    font-size: 1.8rem;
+    gap: 20px;
+    color: var(--cream);
+
+}
+
+.page-header__heading {
+    font-size: 3.5rem;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    text-shadow: 0 2px 4px var(--black);
+}
+
+.page-header__desc {
+    width: 40%;
+    text-shadow: 0 2px 4px var(--black);
+}
+.page-header__link {
+    margin-top: 20px;
+}
