@@ -40,5 +40,7 @@
 .page-header__heading,
 .page-header__desc,
 .page-header__link {
-    transform: translateX(15vw);
+    position: relative;
+    left: 20vw;
+    z-index: 9999;
 }
