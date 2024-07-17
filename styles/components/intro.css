@@ -20,16 +20,15 @@
     height: 350px;
 }
 .intro__img {
-    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
-/* .intro__img img {
-    width: 100%;
+.intro__img img {
+    width: auto;
     height: 100%;
-} */
+}
 
 .intro__container {
     display: flex;
