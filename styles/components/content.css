@@ -30,6 +30,7 @@
     font-size: 2rem;
     width: fit-content;
     border-bottom: 2px solid var(--apple-green);
+    margin-top: 30px;
 }
 .content__desc {
     font-size: 1.5rem;
@@ -42,11 +43,13 @@
     text-align: justify;
 }
 .content__img {
+    border-radius: 8px;
     margin: 20px auto;
     width: 560px;
     height: 320px;
-    border-radius: 8px;
     box-shadow: 0 0 7px var(--black-shadow);
+}
 
-    background-color: blueviolet;
+.photo {
+    border-radius: 8px;
 }
