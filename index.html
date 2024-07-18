@@ -21,19 +21,55 @@
             <p class="header__logo--website">GoIrelandNow</p>
         </a>
         <div class="header__menu">
-            <p class="header__menu__dropdown">About</p>
+            <p class="header__menu__dropdown">Services</p>
             <nav class="header__menu-nav__dropdown">
-                <a href="./pages/about-us.html">About Creators</a>
-                <a href="./pages/about-project.html">About the Project</a>
+                <div class="nav-container">
+                    <h2>About</h2>
+                    <a href="./pages/about-us.html">About Creators</a>
+                    <a href="./pages/about-project.html">About the Project</a>
+                </div>
+                <div class="nav-container">
+                    <h2>Services</h2>
+                    <a href="./pages/about-us.html">Visa</a>
+                    <a href="./pages/about-us.html">Checklist</a>
+                    <a href="./pages/about-project.html">Must-Know</a>
+                    <a href="./pages/about-project.html">More</a>
+                </div>
             </nav>
             <a class="header__menu--link" href="#">Contact Us</a>
         </div>
     </header>
     <main class="main">
         <section class="page-header">
+            
             <h1 class="page-header__heading heading">GoIrelandNow</h1>
             <p class="page-header__desc">Let's make it easy! Come with us!</p>
             <a class="page-header__link button" href="#">Get Started</a>
+
+           <div class="form-container">
+                <div class="overlay"></div>
+               <!-- The form -->
+                <form class="form-popup" id="myForm">
+
+                    <img class="form-close-icon" src="./assets/icons/x-icon2.png">
+                    <h2 class="form-heading">GoIrelandNow</h2>
+               
+                    <label for="fname">First Name:</label>
+                    <input type="text" placeholder="Enter your name" name="fname" required>
+                    
+                    <label for="sname">Surname:</label>
+                    <input type="text" placeholder="Enter your surname" name="sname" required>
+               
+                    <label for="email">Email:</label>
+                    <input type="email" placeholder="Enter your email" name="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]$" required>
+
+                    <label for="objective">Objective:</label>
+                    <textarea name="objective" id="objective" rows="5" placeholder="Briefly explain what you are looking for"></textarea>
+               
+                    <button class="form-button">Submit</button>
+
+                </form>
+            </div>
         </section>
         <section class="main-services">
             <h2 class="main-services__heading heading">Main Services</h2>
@@ -122,6 +158,8 @@
         <p class="footer-copyright">&copy; GoIrelandNow Website - 2024 | All rights reserved.</p>
     </footer> 
     
-    <script src="header-menu-dropdown.js"></script>
+    <script src="./src/header-menu-dropdown.js"></script>
+    <script src="./src/get-started.js"></script>
+    
 </body>
 </html>

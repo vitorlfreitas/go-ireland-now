@@ -42,5 +42,107 @@
 .page-header__link {
     position: relative;
     left: 20vw;
+    z-index: 99;
+}
+
+.form-container {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
     z-index: 9999;
+
+    transform: scale(0);
+    transform-origin: center center;
+    transition: transform 150ms ease-in;
+
+}
+.overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    width: 100%;
+    height: 100%;
+}
+.form-popup {
+
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 0 8px var(--apple-green);
+
+    display: flex;
+    flex-direction: column;
+    
+    padding: 20px 40px;
+    border-radius: 8px;
+
+    transform: rotate(540deg);
+    transition: transform 150ms;
+
+    z-index: 9999;
+}
+
+.form-heading {
+    font-size: 2.4rem;
+    color: #333;
+    margin-bottom: 10px;
+
+    font-family: "Outfit", sans-serif;
+    text-decoration: none;
+    background: linear-gradient(to right, var(--apple-green2),var(--apple-green), var(--lime));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.form-popup label {
+    font-size: 1.2rem;
+    color: var(--font-black);
+}
+
+.form-popup input,
+.form-popup textarea {
+    margin-bottom: 10px;
+    padding: 4px 6px;
+    outline: none;
+    border: 1px solid var(--apple-green);
+}
+
+.form-close-icon {
+    position: absolute;
+    top: 2%;
+    left: 92%;
+    width: 20px;
+}
+.form-close-icon:hover {
+    cursor: pointer;
+}
+
+.form-button {
+    width: fit-content;
+    align-self: center;
+    padding: 10px 30px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border: 1px solid var(--apple-green);
+    box-shadow: 0 0 1px var(--apple-green);
+    border-radius: 8px;
+    transition: all 150ms;
+}
+
+.form-button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 2px var(--apple-green);
+    background-color: rgba(0, 180, 0, 0.200);
+}
+
+.form-button:active {
+    transform: translateY(1px);
 }
