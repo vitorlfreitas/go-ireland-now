@@ -50,6 +50,13 @@
     box-shadow: 0 0 7px var(--black-shadow);
 }
 
+.content__img__about-us img {
+    display: block;
+   
+    width: 100%;
+
+}
+
 .photo {
     border-radius: 8px;
 }
