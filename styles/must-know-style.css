@@ -1,0 +1,15 @@
+@charset 'UTF-8';
+
+/* Importing files */
+@import './abstract/reset.css';
+@import './abstract/variables.css';
+@import './utils/button.css';
+@import './utils/heading.css';
+
+/* Importing Components */
+@import './components/header.css';
+@import './components/footer.css';
+@import './components/main-services.css';
+@import './components/content.css';
+@import './components/about-ireland.css';
+@import './components/social-media.css';

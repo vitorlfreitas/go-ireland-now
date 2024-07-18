@@ -16,15 +16,18 @@
 }
 .intro__img,
 .intro__container {
-    width: 40%;
+    width: 520px;
     height: 350px;
 }
 .intro__img {
-    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
 
+}
+.intro__img img {
+    width: auto;
+    height: 100%;
 }
 
 .intro__container {
