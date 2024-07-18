@@ -38,6 +38,12 @@
 .content__desc {
     font-size: 1.125rem;
     margin-top: 10px;
+    text-align: justify;
+}
+.content__desc__small {
+    font-size: 3rem;
+    margin-top: 10px;
+    text-align: justify;
 }
 .content__img {
     margin: 20px auto;
