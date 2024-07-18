@@ -1,7 +1,8 @@
+/* Importing Components */
 @import './social-media.css';
 @import '../abstract/variables.css';
 
-.intro {
+.intro-pages {
     background-color: var(--bg-intro-section);
     width: 100vw;
     height: 350px;
@@ -11,7 +12,7 @@
     color: var(--cream);
 
 }
-.intro__heading {
+.intro-pages__heading {
     font-size: 10rem;
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
