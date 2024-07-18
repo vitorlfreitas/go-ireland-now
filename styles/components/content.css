@@ -1,0 +1,50 @@
+@import './components/page-header.css';
+@import './components/main-services.css';
+@import './components/social-media.css';
+@import '../abstract/variables.css';
+
+.intro {
+    background-color: var(--bg-intro-section);
+    width: 100vw;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cream);
+
+}
+.intro__heading {
+    font-size: 10rem;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.content {
+    background-color: var(--white);
+    color: var(--font-color);
+
+    max-width:800px;
+    margin: auto;
+
+    padding: 40px 0;
+}
+.content__heading {
+    color: var(--apple-green);
+    font-size: 2rem;
+    width: fit-content;
+    border-bottom: 2px solid var(--apple-green);
+}
+.content__desc {
+    font-size: 1.125rem;
+    margin-top: 10px;
+}
+.content__img {
+    margin: 20px auto;
+    width: 560px;
+    height: 320px;
+    border-radius: 8px;
+    box-shadow: 0 0 7px var(--black-shadow);
+
+    background-color: blueviolet;
+}
