@@ -57,7 +57,8 @@
     width: 100%;
 }
 
-.content__img__about-project img {
+.content__img__about-project img,
+.content__img__about-ireland img {
     display: block;
     width: 100%;
     margin-top: 25px;
