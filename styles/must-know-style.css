@@ -14,6 +14,26 @@
 @import './components/about-ireland.css';
 @import './components/social-media.css';
 
+.must-know {
+    background-color: var(--white);
+    color: var(--font-color);
+
+    max-width: 680px;
+    margin: auto;
+
+    padding: 40px 0;
+}
+.must-know__heading {
+    color: var(--apple-green);
+    font-size: 2rem;
+    width: fit-content;
+    border-bottom: 2px solid var(--apple-green);
+}
+.must-know__desc {
+    font-size: 1.125rem;
+    margin-top: 10px;
+}
+
 .must-know__img {
     margin: 20px auto;
     width: 150px;
@@ -29,4 +49,26 @@
     align-items: center;
     gap: 50px;
     margin: 30px 0;
+}
+.must-know--link {
+    font-size: 1.6rem;
+    color: var(--font-color);
+    position: relative;
+    z-index: 10px; 
+}
+.must-know--link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--lime);
+    top: 100%;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-out;
+}
+.must-know--link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
 }
