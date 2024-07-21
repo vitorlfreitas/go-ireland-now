@@ -28,10 +28,13 @@
     font-size: 2rem;
     width: fit-content;
     border-bottom: 2px solid var(--apple-green);
+    margin-top: 30px;
 }
 .must-know__desc {
-    font-size: 1.125rem;
+    font-size: 1.5rem;
     margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
 }
 
 .must-know__img {
@@ -52,6 +55,7 @@
 }
 .must-know--link {
     font-size: 1.6rem;
+    font-weight: bold;
     color: var(--font-color);
     position: relative;
     z-index: 10px; 
