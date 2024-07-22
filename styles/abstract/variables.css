@@ -14,6 +14,7 @@
   --apple-green: #76b518;
   --apple-green2: #a5be00;
   --lime: #5c8001;
+  --light-green: #4CAF50;
 
   --grey: #555;
 
@@ -21,6 +22,8 @@
   --bg-pg-header: #283618;
   --bg-intro-section: #283618;
   --bg-social-section: #283618;
+  
+  --selection: rgb(2, 53, 2);
 
   /* Shadow */
   --black-shadow: rgba(0, 0, 0, 0.450);

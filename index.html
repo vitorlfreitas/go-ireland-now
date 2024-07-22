@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Description of the Website -->
-    <meta name="description" content="Main page of the website"> 
+    <meta name="description" content="Main page of the website">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Title -->
     <title>GoIrelandNow</title>
-    
+
     <!-- Imports -->
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/index-style.css">
@@ -15,6 +16,7 @@
     <link rel="shortcut icon" href="./assets/icons/logo-l.png" type="image/x-icon">
 
 </head>
+
 <body>
     <header class="header">
         <a class="header__logo" href="#">
@@ -39,38 +41,57 @@
             </nav>
             <a class="header__menu--link" href="./pages/contact-us.html">Contact Us</a>
         </div>
+
+        <img src="./assets/icons/menu-burger.png" class="header__menu-mobile" alt="Menu"></>
+        <div class="header__menu-mobile__overlay"></div>
+        <div class="header__menu-mobile__dropdown">
+            <img class="close-button" src="assets/icons/x-icon2.png">
+            <h2>About</h2>
+            <a href="./pages/about-us.html">About Us</a>
+            <a href="./pages/about-project.html" class="lastItem">About Project</a>
+            <h2>Services</h2>
+            <a href="./pages/visa.html">Visa</a>
+            <a href="./pages/checklist.html">Checklist</a>
+            <a href="./pages/must-know.html">Must-know</a>
+            <a href="./pages/more.html" class="lastItem">More</a>
+            <a href="./pages/contact-us.html" class="header__menu--link">Contact Us</a>
+        </div>
     </header>
     <main class="main">
         <section class="page-header">
-            
+
             <h1 class="page-header__heading heading">GoIrelandNow</h1>
             <p class="page-header__desc">Let's make it easy! Come with us!</p>
             <a class="page-header__link button" href="#">Get Started</a>
 
-           <div class="form-container">
+            <div class="form-container">
                 <div class="overlay"></div>
-               <!-- The form -->
+                <!-- The form -->
                 <form class="form-popup" id="myForm">
 
                     <img class="form-close-icon" src="./assets/icons/x-icon2.png">
                     <h2 class="form-heading">GoIrelandNow</h2>
-               
+
                     <label for="fname">First Name:</label>
                     <input type="text" placeholder="Enter your name" name="fname" required>
-                    
+
                     <label for="sname">Surname:</label>
                     <input type="text" placeholder="Enter your surname" name="sname" required>
-               
+
                     <label for="email">Email:</label>
-                    <input type="email" placeholder="Enter your email" name="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]$" required>
+                    <input type="email" placeholder="Enter your email" name="email"
+                        pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]$" required>
 
                     <label for="objective">Objective:</label>
-                    <textarea name="objective" id="objective" rows="5" placeholder="Briefly explain what you are looking for"></textarea>
-               
-                    <button class="form-button">Submit</button>
+                    <textarea name="objective" id="objective" rows="5"
+                        placeholder="Briefly explain what you are looking for"></textarea>
+
+                    <button class="form-button" type="submit">Submit</button>
 
                 </form>
             </div>
+            <div class="confirmation-popup">Sent Successfully</div>
+
         </section>
         <section class="main-services">
             <h2 class="main-services__heading heading">Main Services</h2>
@@ -96,17 +117,37 @@
             </div>
             <div class="intro__container">
                 <h2 class="intro__heading">Get to Know GIN</h2>
-                <p class="intro__desc">GoIrelandNow was created in 2024 as a college project by three students: Karen, Thales, and Vitor...
-                    
+                <p class="intro__desc">GoIrelandNow was created in 2024 as a college project by three students: Karen,
+                    Thales, and Vitor...
+
                 </p>
                 <a class="intro__link button" href="./pages/about-project.html">Read More</a>
             </div>
         </section>
         <section class="content">
             <h2 class="content__heading heading">Ireland</h2>
-            <p class="content__desc">Ireland, known as the Emerald Isle, is a land of stunning natural beauty, rich history, and vibrant culture. From the lush green landscapes dotted with ancient castles to the bustling cities filled with friendly locals, Ireland offers a unique and welcoming environment. The breathtaking cliffs of Moher, the serene lakes of Killarney, and the scenic coastal drives are just a few examples of the picturesque scenery that awaits you. Whether you're an adventurer looking to explore the great outdoors or a city dweller seeking the charm of Dublin's historic streets, Ireland has something for everyone.</p><br>
-            <p class="content__desc">Ireland's culture is as rich and inviting as its landscapes. With a history that spans thousands of years, Ireland is home to many ancient sites, including the famous Newgrange passage tomb and the Rock of Cashel. The country is also renowned for its music, dance, and literature. Traditional Irish music sessions can be found in cozy pubs across the country, where you can enjoy lively tunes and warm hospitality. Additionally, Ireland has produced some of the world's greatest writers, such as James Joyce, W.B. Yeats, and Seamus Heaney, whose works continue to inspire and captivate readers globally.</p><br>
-            <p class="content__desc">The Irish people are known for their friendliness and hospitality, making it easy for newcomers to feel at home. Ireland's thriving economy and high quality of life make it an attractive destination for those seeking new opportunities. The country boasts excellent educational institutions, a strong healthcare system, and a vibrant job market, particularly in sectors such as technology, pharmaceuticals, and finance. Moving to Ireland means becoming part of a close-knit community that values tradition and innovation, offering a perfect blend of old-world charm and modern living. Join us in Ireland, and experience the warmth, beauty, and opportunities that this extraordinary country has to offer.</p>
+            <p class="content__desc">Ireland, known as the Emerald Isle, is a land of stunning natural beauty, rich
+                history, and vibrant culture. From the lush green landscapes dotted with ancient castles to the bustling
+                cities filled with friendly locals, Ireland offers a unique and welcoming environment. The breathtaking
+                cliffs of Moher, the serene lakes of Killarney, and the scenic coastal drives are just a few examples of
+                the picturesque scenery that awaits you. Whether you're an adventurer looking to explore the great
+                outdoors or a city dweller seeking the charm of Dublin's historic streets, Ireland has something for
+                everyone.</p><br>
+            <p class="content__desc">Ireland's culture is as rich and inviting as its landscapes. With a history that
+                spans thousands of years, Ireland is home to many ancient sites, including the famous Newgrange passage
+                tomb and the Rock of Cashel. The country is also renowned for its music, dance, and literature.
+                Traditional Irish music sessions can be found in cozy pubs across the country, where you can enjoy
+                lively tunes and warm hospitality. Additionally, Ireland has produced some of the world's greatest
+                writers, such as James Joyce, W.B. Yeats, and Seamus Heaney, whose works continue to inspire and
+                captivate readers globally.</p><br>
+            <p class="content__desc">The Irish people are known for their friendliness and hospitality, making it easy
+                for newcomers to feel at home. Ireland's thriving economy and high quality of life make it an attractive
+                destination for those seeking new opportunities. The country boasts excellent educational institutions,
+                a strong healthcare system, and a vibrant job market, particularly in sectors such as technology,
+                pharmaceuticals, and finance. Moving to Ireland means becoming part of a close-knit community that
+                values tradition and innovation, offering a perfect blend of old-world charm and modern living. Join us
+                in Ireland, and experience the warmth, beauty, and opportunities that this extraordinary country has to
+                offer.</p>
 
             <div class="content__img__about-ireland">
                 <img src="./assets/images/cliffs.png" alt="Image of the Blarney Castle">
@@ -135,7 +176,7 @@
             <div class="footer__logo">
                 <a href="#" class="footer__logo__container">
                     <img class="footer__logo--icon" src="./assets/icons/logo-l2.png" alt="Logo of the WebSite">
-                    <p class="footer__logo--website" >GoIrelandNow</p>
+                    <p class="footer__logo--website">GoIrelandNow</p>
                 </a>
                 <a href="https://buymeacoffee.com/" target="_blank" class="footer__logo__container">
                     <img class="footer__logo--icon" src="./assets/icons/coffee.png" alt="Buy us a coffee">
@@ -158,10 +199,11 @@
             </div>
         </div>
         <p class="footer-copyright">&copy; GoIrelandNow Website - 2024 | All rights reserved.</p>
-    </footer> 
-    
+    </footer>
+
     <script src="./src/header-menu-dropdown.js"></script>
     <script src="./src/get-started.js"></script>
-    
+
 </body>
+
 </html>

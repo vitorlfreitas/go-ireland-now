@@ -22,7 +22,6 @@
         </a>
         <div class="header__menu">
             <p class="header__menu__dropdown">Services</p>
-            <p class="header__menu__dropdown">Services</p>
             <nav class="header__menu-nav__dropdown">
                 <div class="nav-container">
                     <h2>About</h2>
@@ -31,13 +30,28 @@
                 </div>
                 <div class="nav-container">
                     <h2>Services</h2>
-                    <a href="../pages/about-us.html">Visa</a>
-                    <a href="../pages/about-us.html">Checklist</a>
-                    <a href="../pages/about-project.html">Must-Know</a>
-                    <a href="../pages/about-project.html">More</a>
+                    <a href="../pages/visa.html">Visa</a>
+                    <a href="../pages/checklist.html">Checklist</a>
+                    <a href="../pages/must-know.html">Must-Know</a>
+                    <a href="../pages/more.html">More</a>
                 </div>
             </nav>
-            <a class="header__menu--link" href="./contact-us.html">Contact Us</a>
+            <a class="header__menu--link" href="../pages/contact-us.html">Contact Us</a>
+        </div>
+
+        <img src="../assets/icons/menu-burger.png" class="header__menu-mobile" alt="Menu"></>
+        <div class="header__menu-mobile__overlay"></div>
+        <div class="header__menu-mobile__dropdown">
+            <img class="close-button" src="../assets/icons/x-icon2.png">
+            <h2>About</h2>
+            <a href="../pages/about-us.html">About Us</a>
+            <a href="../pages/about-project.html" class="lastItem">About Project</a>
+            <h2>Services</h2>
+            <a href="../pages/visa.html">Visa</a>
+            <a href="../pages/checklist.html">Checklist</a>
+            <a href="../pages/must-know.html">Must-know</a>
+            <a href="../pages/more.html" class="lastItem">More</a>
+            <a href="../pages/contact-us.html" class="header__menu--link">Contact Us</a>
         </div>
     </header>
     <main class="main">
@@ -133,6 +147,6 @@
         <p class="footer-copyright">&copy; GoIrelandNow Website - 2024 | All rights reserved.</p>
     </footer> 
     
-    <script src="header-menu-dropdown.js"></script>
+    <script src="../src/header-menu-dropdown.js"></script>
 </body>
 </html>
