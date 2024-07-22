@@ -53,3 +53,30 @@
     transform: scaleX(1);
     transform-origin: left;
 }
+
+@media all and (min-width: 1400px) {
+    .main-services__list {
+
+        width: 50%;
+    }
+}
+
+@media all and (max-width: 600px) {
+
+    .main-services {
+
+        padding: 10px 0;
+    }
+    .main-services__heading {
+        margin-bottom: 15px;
+        font-size: 1.6rem;
+    }
+    .main-services__list {
+
+        width: 90%;
+        flex-wrap: wrap;
+    }
+    .main-services__item--link {
+        font-size: 1.1rem;
+    }
+}

@@ -20,9 +20,6 @@ li {
     list-style-type: none;
 }
 
-a:visited {
-    color: var(--apple-green2);
-}
 
 body::selection,
 html::selection,

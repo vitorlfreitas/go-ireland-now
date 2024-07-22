@@ -81,3 +81,19 @@
     -webkit-background-clip: text;
     
 }
+
+@media all and (max-width:600px) {
+    .social-media {
+        padding: 10px 0;
+    }
+    .social-media__heading {
+        font-size: 1.8rem;        
+    }
+    .social-media__card {
+        width: 80px;
+        padding: 8px 12px;
+    }
+    .social-media__container > a > p{
+        display: none;
+    }
+}

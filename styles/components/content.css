@@ -68,3 +68,31 @@
 .photo {
     border-radius: 8px;
 }
+
+@media all and (max-width: 900px) {
+
+    .content {
+        padding: 30px 10px;
+    }
+    .content__heading {
+        margin-top: 15px;
+    }
+    .content__desc {
+        font-size: 1.125rem;
+
+    }
+}
+@media all and (max-width: 600px) {
+
+    .content {
+        padding: 10px 15px;
+    }
+    .content__heading {
+        font-size: 1.75rem;
+        margin-top: 5px;
+    }
+    .content__desc {
+        font-size: .925rem;
+
+    }
+}

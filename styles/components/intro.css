@@ -54,3 +54,48 @@
     
 }
 
+@media all and (max-width: 850px) {
+    .intro {
+        padding: 15px 0;
+
+    }
+    .intro__img,
+    .intro__container {
+        width: 320px;
+        height: 250px;
+    }
+    
+    .intro__heading {
+        font-size: 2.2rem;
+    }
+    .intro__desc {
+        font-size: 1.125rem;
+    }
+
+}
+@media all and (max-width: 550px) {
+    .intro {
+        flex-direction: column;
+        gap: 0px;
+    
+    }
+    .intro__img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .intro__container {
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }   
+    .intro__heading {
+        font-size: 1.8rem;
+
+    }
+    .intro__desc {
+        text-align: center;
+    }
+}
