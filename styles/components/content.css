@@ -44,13 +44,6 @@
     margin-top: 10px;
     text-align: justify;
 }
-.content__img {
-    border-radius: 8px;
-    margin: 20px auto;
-    width: 560px;
-    height: 320px;
-    box-shadow: 0 0 7px var(--black-shadow);
-}
 
 .content__img__about-us img {
     display: block;
@@ -62,11 +55,40 @@
 .more__img {
     display: block;
     width: 100%;
+    height: 100%;
     margin-top: 25px;
 }
 
 .photo {
     border-radius: 8px;
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+    width: auto;
+    box-shadow: 0 0 7px var(--black-shadow);
+}
+.content--link {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--font-color);
+    position: relative;
+    z-index: 10px; 
+}
+.content--link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--lime);
+    top: 100%;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-out;
+}
+.content--link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
 }
 
 @media all and (max-width: 900px) {
@@ -81,6 +103,14 @@
         font-size: 1.125rem;
 
     }
+    .intro-pages {
+        padding: 15px 0;
+
+    }
+    .intro-pages__heading {
+        font-size: 4rem;
+    }
+    
 }
 @media all and (max-width: 600px) {
 
@@ -95,4 +125,26 @@
         font-size: .925rem;
 
     }
+    .intro-pages {
+        flex-direction: column;
+        gap: 0px;
+    
+    }
+    .intro-pages__heading {
+        font-size: 4rem;
+
+    }
+    
+    .content__img{
+        display: block;
+        width: 100%;
+        margin-top: 25px;
+
+    }
+    .photo{
+        display: block;
+        width: 100%;
+        margin-top: 25px;
+    }
+    
 }

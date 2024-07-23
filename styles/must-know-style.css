@@ -36,16 +36,13 @@
     margin-bottom: 10px;
     text-align: justify;
 }
-
 .must-know__img {
     margin: 20px auto;
     width: 150px;
     height: 150px;
     border-radius: 8px;
     box-shadow: 0 0 7px var(--black-shadow);
-    background-color: blueviolet;
 }
-
 .must-know-app__container {
     display: flex;
     justify-content: center;
@@ -53,26 +50,70 @@
     gap: 50px;
     margin: 30px 0;
 }
-.must-know--link {
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: var(--font-color);
+.google-maps {
     position: relative;
-    z-index: 10px; 
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
 }
-.must-know--link::after {
-    content: '';
-    position: absolute;
+.google-maps iframe {
     width: 100%;
-    height: 2px;
-    background-color: var(--lime);
-    top: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
     left: 0;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 250ms ease-out;
 }
-.must-know--link:hover::after {
-    transform: scaleX(1);
-    transform-origin: left;
+@media all and (max-width: 850px) {
+    .must-know {
+        padding: 30px 10px;
+
+    }
+    .must-know__img, .photo {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .must-know__container {
+        width: 320px;
+        height: 250px;
+    }
+    
+    .must-know__heading {
+        font-size: 2.2rem;
+        margin-top: 15px;
+    }
+    .must-know__desc {
+        font-size: 1.125rem;
+    }
+
+}
+@media all and (max-width: 550px) {
+    .must-know {
+        flex-direction: column;
+        gap: 0px;
+        padding: 10px 15px;
+    
+    }
+    .must-know__img, .photo {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .must-know__container {
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }   
+    .must-know__heading {
+        font-size: 1.75rem;
+        margin-top: 5px;
+
+    }
+    .must-know__desc {
+        text-align: center;
+        font-size: .925rem;
+
+    }
 }
