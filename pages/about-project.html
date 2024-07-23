@@ -18,46 +18,65 @@
     <header class="header">
         <a class="header__logo" href="../index.html">
             <img class="header__logo--icon" src="../assets/icons/logo-bg-transparent.png" alt="Logo of the WebSite">
-            <p class="header__logo--website">GoIrelandNow</p>
+            <p class="header__logo--website" lang="en">GoIrelandNow</p>
         </a>
         <div class="header__menu">
-            <p class="header__menu__dropdown">Services</p>
+            <p class="header__menu__dropdown" data-pt="Serviços" data-en="Services">Services</p>
             <nav class="header__menu-nav__dropdown">
                 <div class="nav-container">
                     <h2>About</h2>
-                    <a href="../pages/about-us.html">About Creators</a>
-                    <a href="../pages/about-project.html">About the Project</a>
+                    <a href="../pages/about-us.html" data-pt="Sobre Criadores" data-en="About Creators">About
+                        Creators</a>
+                    <a href="../pages/about-project.html" data-en="About the Project" data-pt="Sobre o Projeto">About the
+                        Project</a>
                 </div>
                 <div class="nav-container">
                     <h2>Services</h2>
-                    <a href="../pages/visa.html">Visa</a>
-                    <a href="../pages/checklist.html">Checklist</a>
-                    <a href="../pages/must-know.html">Must-Know</a>
-                    <a href="../pages/more.html">More</a>
+                    <a href="../pages/visa.html" data-pt="Visto" data-en="Visa">Visa</a>
+                    <a href="../pages/checklist.html" lang="en">Checklist</a>
+                    <a href="../pages/must-know.html" lang="en">Must-Know</a>
+                    <a href="../pages/more.html" data-pt="Mais" data-en="More">More</a>
                 </div>
             </nav>
-            <a class="header__menu--link" href="../pages/contact-us.html">Contact Us</a>
+            <a class="header__menu--link" href="../pages/contact-us.html" data-pt="Entre em Contato"
+                data-en="Contact Us">Contact Us</a>
         </div>
 
         <img src="../assets/icons/menu-burger.png" class="header__menu-mobile" alt="Menu"></>
         <div class="header__menu-mobile__overlay"></div>
         <div class="header__menu-mobile__dropdown">
-            <img class="close-button" src="../assets/icons/x-icon2.png">
-            <h2>About</h2>
-            <a href="../pages/about-us.html">About Us</a>
-            <a href="../pages/about-project.html" class="lastItem">About Project</a>
-            <h2>Services</h2>
-            <a href="../pages/visa.html">Visa</a>
-            <a href="../pages/checklist.html">Checklist</a>
-            <a href="../pages/must-know.html">Must-know</a>
-            <a href="../pages/more.html" class="lastItem">More</a>
-            <a href="../pages/contact-us.html" class="header__menu--link">Contact Us</a>
+            <img class="close-button" src="assets/icons/x-icon2.png">
+
+            <h2 data-pt="Sobre" data-en="About">About</h2>
+            <a href="../pages/about-us.html" data-pt="Sobre Nós" data-en="About Us">About Us</a>
+            <a href="../pages/about-project.html" class="lastItem" data-pt="" data-en="">About Project</a>
+
+            <h2 data-pt="Serviços" data-en="Services">Services</h2>
+            <a href="../pages/visa.html" data-pt="Visto" data-en="Visa">Visa</a>
+            <a href="../pages/checklist.html" lang="en">Checklist</a>
+            <a href="../pages/must-know.html" lang="en">Must-know</a>
+            <a href="../pages/more.html" class="lastItem" data-pt="Saiba Mais" data-en="More">More</a>
+            <a href="../pages/contact-us.html" class="header__menu--link" data-pt="Entre em Contato"
+                data-en="Contact Us">Contact Us</a>
+
         </div>
     </header>
+    <div class="translate">
+        <div class="translate-button__container">
+            <button id="en" class="translate--buttons button-active">
+                <img src="../assets/icons/uk-flag.png" alt="United Kingdom Flag">
+                <p>EN</p>
+            </button>
+            <button id="pt" class="translate--buttons ">
+                <img src="../assets/icons/brazil-flag.png" alt="Brazilian Flag">
+                <p>PT</p>
+            </button>
+        </div>
+    </div>
     <main class="main">
-        <section class="intro">
-            <div class="intro__container">
-                <h2 class="intro__heading">THE PROJECT</h2>
+        <section class="intro-pages">
+            <div class="intro-pages__container">
+                <h2 class="intro-pages__heading">PROJECT GIN</h2>
             </div>
         </section>
         <section class="content">
@@ -72,7 +91,8 @@
         </section>
     </main>
     <aside class="social-media">
-        <h2 class="social-media__heading heading">Follow Us on Social Media</h2>
+        <h2 class="social-media__heading heading" data-pt="Siga Nossas Redes Sociais"
+            data-en="Follow Us on Social Media">Follow Us on Social Media</h2>
         <div class="social-media__container">
             <a class="social-media__card instagram-card" href="https://www.instagram.com/" target="_blank">
                 <img src="../assets/icons/instagram-icon.png" alt="Logo of the Instagram">
@@ -93,31 +113,34 @@
             <div class="footer__logo">
                 <a href="#" class="footer__logo__container">
                     <img class="footer__logo--icon" src="../assets/icons/logo-l2.png" alt="Logo of the WebSite">
-                    <p class="footer__logo--website" >GoIrelandNow</p>
+                    <p class="footer__logo--website">GoIrelandNow</p>
                 </a>
-                <a href="https://buymeacoffee.com/" target="_blank"class="footer__logo__container">
+                <a href="https://buymeacoffee.com/" target="_blank" class="footer__logo__container">
                     <img class="footer__logo--icon" src="../assets/icons/coffee.png" alt="Buy us a coffee">
-                    <p class="footer__logo--website">Buy us a Coffee</p>
+                    <p class="footer__logo--website" data-pt="Colabore" data-en="Buy us a Coffee">Buy us a Coffee</p>
                 </a>
             </div>
             <div class="footer__services">
-                <h2 class="footer__services__heading">Services</h2>
-                <a href="./visa.html" class="footer__services__link">Visa</a>
-                <a href="./checklist.html" class="footer__services__link">Checklist</a>
-                <a href="./must-know.html" class="footer__services__link">Must-Know</a>
-                <a href="./more.html" class="footer__services__link">More</a>
+                <h2 class="footer__services__heading" data-pt="" data-en="">Services</h2>
+                <a href="../pages/visa.html" class="footer__services__link" data-pt="Visto" data-en="Visa">Visa</a>
+                <a href="../pages/checklist.html" class="footer__services__link">Checklist</a>
+                <a href="../pages/must-know.html" class="footer__services__link">Must-Know</a>
+                <a href="../pages/more.html" class="footer__services__link" data-pt="Mais" data-en="More">More</a>
 
             </div>
             <div class="footer__contact">
-                <h2 class="footer__contact__heading">Contact</h2>
+                <h2 class="footer__contact__heading" data-pt="" data-en="">Contact</h2>
                 <a href="https://www.instagram.com/" target="_blank" class="footer__contact__link">Instagram</a>
                 <a href="https://www.facebook.com/" target="_blank" class="footer__contact__link">Facebook</a>
                 <a href="https://x.com/" target="_blank" class="footer__contact__link">Twitter</a>
             </div>
         </div>
-        <p class="footer-copyright">&copy; GoIrelandNow Website - 2024 | All rights reserved.</p>
-    </footer> 
+        <p class="footer-copyright" data-pt="&copy; GoIrelandNow Website - 2024 | Todos os direitos reservados."
+            data-en="&copy; GoIrelandNow Website - 2024 | All rights reserved.">&copy; GoIrelandNow Website - 2024 | All
+            rights reserved.</p>
+    </footer>
     
     <script src="../src/header-menu-dropdown.js"></script>
+    <script src="../src/translate.js"></script>
 </body>
 </html>
