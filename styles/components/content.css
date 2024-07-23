@@ -10,7 +10,6 @@
     justify-content: center;
     align-items: center;
     color: var(--cream);
-
 }
 .intro-pages__heading {
     font-size: 10rem;
@@ -44,29 +43,59 @@
     margin-top: 10px;
     text-align: justify;
 }
-.content__img {
-    border-radius: 8px;
-    margin: 20px auto;
-    width: 560px;
-    height: 320px;
-    box-shadow: 0 0 7px var(--black-shadow);
+.content__desc-list{
+    font-size: 1.2rem;
+    padding-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    list-style-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%235C8001"><path d="M9 19c-.26 0-.51-.1-.71-.29l-6-6A.996.996 0 1 1 3.7 11.3l5.29 5.29L20.28 5.3a.996.996 0 1 1 1.41 1.41l-12 12c-.2.2-.45.29-.71.29Z"></path></svg>'); /*source: svgbackgrounds.com*/
 }
-
+.content__desc-list li::marker {
+    font-size: 2rem;
+    line-height:  .1rem; 
+}
 .content__img__about-us img {
     display: block;
     width: 100%;
 }
-
 .content__img__about-project img,
 .content__img__about-ireland img,
 .more__img {
     display: block;
     width: 100%;
+    height: 100%;
     margin-top: 25px;
 }
-
 .photo {
     border-radius: 8px;
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+    width: auto;
+    box-shadow: 0 0 7px var(--black-shadow);
+}
+.content--link {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--font-color);
+    position: relative;
+    z-index: 10px; 
+}
+.content--link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--lime);
+    top: 100%;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-out;
+}
+.content--link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
 }
 
 @media all and (max-width: 900px) {
@@ -77,10 +106,18 @@
     .content__heading {
         margin-top: 15px;
     }
-    .content__desc {
+    .content__desc, .content__desc-list {
         font-size: 1.125rem;
 
     }
+    .intro-pages {
+        padding: 15px 0;
+
+    }
+    .intro-pages__heading {
+        font-size: 4rem;
+    }
+    
 }
 @media all and (max-width: 600px) {
 
@@ -91,8 +128,31 @@
         font-size: 1.75rem;
         margin-top: 5px;
     }
-    .content__desc {
+    .content__desc, .content__desc-list {
         font-size: .925rem;
 
     }
+    .intro-pages {
+        flex-direction: column;
+        gap: 0px;
+    
+    }
+    .intro-pages__heading {
+        font-size: 4rem;
+
+    }
+    
+    .content__img{
+        display: block;
+        width: 100%;
+        margin-top: 25px;
+
+    }
+
+    .photo{
+        display: block;
+        width: 100%;
+        margin-top: 25px;
+    }
+    
 }
