@@ -42,6 +42,12 @@
     height: 150px;
     border-radius: 8px;
     box-shadow: 0 0 7px var(--black-shadow);
+    width: fit-content;
+    transition: transform 350ms;
+}
+.must-know__img:hover {
+    transform: translateY(1px);
+    box-shadow: 0 0 22px var(--black-shadow);
 }
 .must-know-app__container {
     display: flex;
