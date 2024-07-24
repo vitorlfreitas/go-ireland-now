@@ -101,8 +101,12 @@
     transform-origin: left;
 }
 .footer-copyright {
-    margin-top: 20px;
     font-size: 1.125rem;
+    width: 80%;
+    margin: auto;
+}
+.margin-top-20 {
+    margin-top: 20px;
 }
 
 @media all and (max-width: 600px) {

@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Description of the Website -->
-    <meta name="description" content="Page to introduce the members of the website"> 
+    <meta name="description" content="Page to introduce the members of the website">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Title -->
     <title>GoIrelandNow</title>
-    
+
     <!-- Imports -->
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/index-style.css">
@@ -15,6 +16,7 @@
     <link rel="shortcut icon" href="../assets/icons/logo-l.png" type="image/x-icon">
 
 </head>
+
 <body>
     <header class="header">
         <a class="header__logo" href="../index.html">
@@ -28,7 +30,8 @@
                     <h2>About</h2>
                     <a href="../pages/about-us.html" data-pt="Sobre Criadores" data-en="About Creators">About
                         Creators</a>
-                    <a href="../pages/about-project.html" data-en="About the Project" data-pt="Sobre o Projeto">About the
+                    <a href="../pages/about-project.html" data-en="About the Project" data-pt="Sobre o Projeto">About
+                        the
                         Project</a>
                 </div>
                 <div class="nav-container">
@@ -46,11 +49,12 @@
         <img src="../assets/icons/menu-burger.png" class="header__menu-mobile" alt="Menu"></>
         <div class="header__menu-mobile__overlay"></div>
         <div class="header__menu-mobile__dropdown">
-            <img class="close-button" src="assets/icons/x-icon2.png">
+            <img class="close-button" src="../assets/icons/x-icon2.png">
 
             <h2 data-pt="Sobre" data-en="About">About</h2>
             <a href="../pages/about-us.html" data-pt="Sobre Nós" data-en="About Us">About Us</a>
-            <a href="../pages/about-project.html" class="lastItem" data-pt="" data-en="">About Project</a>
+            <a href="../pages/about-project.html" class="lastItem" data-pt="Sobre Projeto" data-en="About Project">About
+                Project</a>
 
             <h2 data-pt="Serviços" data-en="Services">Services</h2>
             <a href="../pages/visa.html" data-pt="Visto" data-en="Visa">Visa</a>
@@ -77,19 +81,28 @@
     <main class="main">
         <section class="intro-pages">
             <div class="intro-pages__container">
-                <h2 class="intro-pages__heading">CONTACT US</h2>
+                <h2 class="intro-pages__heading" data-pt="CONTATE NOS" data-en="CONTACT US">CONTACT US</h2>
         </section>
         <section class="content">
-        <h2 class="content__heading heading">Getting in Touch:
-        </h2><br>
-            <p class="content__desc">If you feel you need more than just a few words to describe your situation, email us and we will get back to you as soon as possible! </p><br>
+            <h2 class="content__heading heading" data-pt="Entre em Contato" data-en="Getting in Touch:">Getting in
+                Touch:
+            </h2><br>
+            <p class="content__desc"
+                data-pt="Se achar que precisa de mais do que apenas algumas palavras para descrever sua situação, envie-nos um e-mail e entraremos em contato com você o mais rápido possível! "
+                data-en="If you feel you need more than just a few words to describe your situation, email us and we will get back to you as soon as possible!">
+                If you feel you need more than just a few words to describe your situation, email us and we will get
+                back to you as soon as possible!</p><br>
 
-            <p class="content__desc"> <a class="content--link" href="mailto:karen.ferreiramagalhaes@student.griffith.ie">Send an email to Karen Magalhaes 😊</a></p> 
-           
-            <p class="content__desc"><a class="content--link" href="mailto:thales.campos@student.griffith.ie">Send an email to Thales Campos 😁</a></p>
-            
-            <p class="content__desc"> <a class="content--link" href="mailto:vitor.freitas@student.griffith.ie">Send an email to Vitor Freitas 😎</a></p> 
-           
+            <p class="content__desc"> <a class="content--link" href="mailto:karen.ferreiramagalhaes@student.griffith.ie"
+                    data-pt="Envie um email para Karen Magalhaes" data-en="Send an email to Karen Magalhaes 😊">Send an
+                    email to Karen Magalhaes 😊</a></p>
+
+            <p class="content__desc"><a class="content--link" href="mailto:thales.campos@student.griffith.ie" data-pt="Envie um email para Thales Campos"
+                    data-en="Send an email to Thales Campos 😊">Send an email to Thales Campos 😁</a></p>
+
+            <p class="content__desc"> <a class="content--link" href="mailto:vitor.freitas@student.griffith.ie"
+                    data-pt="Envie um email para Vitor Freitas" data-en="Send an email to Vitor Freitas 😊">Send an email to Vitor Freitas 😎</a></p>
+
         </section>
         <aside class="social-media">
             <h2 class="social-media__heading heading" data-pt="Siga Nossas Redes Sociais"
@@ -137,12 +150,14 @@
                 <a href="https://x.com/" target="_blank" class="footer__contact__link">Twitter</a>
             </div>
         </div>
+        <p class="footer-copyright margin-top-20">Karen Magalhaes - 3146094 | Thales Campos - 3151261 | Vitor Freitas - 3152612</p>
         <p class="footer-copyright" data-pt="&copy; GoIrelandNow Website - 2024 | Todos os direitos reservados."
             data-en="&copy; GoIrelandNow Website - 2024 | All rights reserved.">&copy; GoIrelandNow Website - 2024 | All
-            rights reserved.</p>
+            rights reserved</p>
     </footer>
-    
+
     <script src="../src/header-menu-dropdown.js"></script>
     <script src="../src/translate.js"></script>
 </body>
+
 </html>
