@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Description of the Website -->
-    <meta name="description" content="Page to introduce the members of the website"> 
+    <meta name="description" content="Page to introduce the members of the website">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Title -->
     <title>GoIrelandNow</title>
-    
+
     <!-- Imports -->
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/components/content.css">
     <link rel="shortcut icon" href="../assets/icons/logo-l.png" type="image/x-icon">
 
 </head>
+
 <body>
     <header class="header">
         <a class="header__logo" href="../index.html">
@@ -25,8 +27,11 @@
             <nav class="header__menu-nav__dropdown">
                 <div class="nav-container">
                     <h2>About</h2>
-                    <a href="../pages/about-us.html">About Creators</a>
-                    <a href="../pages/about-project.html">About the Project</a>
+                    <a href="../pages/about-us.html" data-pt="Sobre Criadores" data-en="About Creators">About
+                        Creators</a>
+                    <a href="../pages/about-project.html" data-en="About the Project" data-pt="Sobre o Projeto">About
+                        the
+                        Project</a>
                 </div>
                 <div class="nav-container">
                     <h2>Services</h2>
@@ -42,29 +47,44 @@
         <img src="../assets/icons/menu-burger.png" class="header__menu-mobile" alt="Menu">/>
         <div class="header__menu-mobile__overlay"></div>
         <div class="header__menu-mobile__dropdown">
-            <img class="close-button" src="../assets/icons/x-icon2.png" alt="close icon">
-            <h2>About</h2>
-            <a href="../pages/about-us.html">About Us</a>
-            <a href="../pages/about-project.html" class="lastItem">About Project</a>
-            <h2>Services</h2>
-            <a href="../pages/visa.html">Visa</a>
-            <a href="../pages/checklist.html">Checklist</a>
-            <a href="../pages/must-know.html">Must-know</a>
-            <a href="../pages/more.html" class="lastItem">More</a>
-            <a href="../pages/contact-us.html" class="header__menu--link">Contact Us</a>
+            <img class="close-button" src="../assets/icons/x-icon2.png">
+
+            <h2 data-pt="Sobre" data-en="About">About</h2>
+            <a href="../pages/about-us.html" data-pt="Sobre Nós" data-en="About Us">About Us</a>
+            <a href="../pages/about-project.html" class="lastItem" data-pt="Sobre Projeto" data-en="About Project">About
+                Project</a>
+
+            <h2 data-pt="Serviços" data-en="Services">Services</h2>
+            <a href="../pages/visa.html" data-pt="Visto" data-en="Visa">Visa</a>
+            <a href="../pages/checklist.html" lang="en">Checklist</a>
+            <a href="../pages/must-know.html" lang="en">Must-know</a>
+            <a href="../pages/more.html" class="lastItem" data-pt="Saiba Mais" data-en="More">More</a>
+            <a href="../pages/contact-us.html" class="header__menu--link" data-pt="Entre em Contato"
+                data-en="Contact Us">Contact Us</a>
+
         </div>
     </header>
     <main class="main">
-        <section class="intro">
-            <div class="intro__container">
-                <h2 class="intro__heading">THE PROJECT</h2>
+        <section class="intro-pages">
+            <div class="intro-pages__container">
+                <h2 class="intro-pages__heading">PROJECT GIN</h2>
             </div>
         </section>
         <section class="content">
-            
-            <h2 class="content__heading heading">How It All Started</h2>
-            
-            <p class="content__desc">GoIrelandNow was created in 2024 as a college project by three students from Griffith College Cork: Karen, Thales, and Vitor. The main idea is to help people, from any country in the world, who are interested in learning more about moving to Ireland. The website provides consistent and updated information, covering everything from the initial steps to tips after you've moved, making the whole process easier for everybody.</p>
+
+            <h2 class="content__heading heading" data-pt="Como Tudo Começou" data-en="How It All Started">
+                How It All Started
+            </h2>
+
+            <p class="content__desc"
+                data-pt="A GoIrelandNow foi criada em 2024 como um projeto universitário por três alunos da Griffith College Cork: Karen, Thales e Vitor. A ideia principal é ajudar as pessoas, de qualquer país do mundo, que estejam interessadas em saber mais sobre como se mudar para a Irlanda. O site fornece informações consistentes e atualizadas, abrangendo desde as etapas iniciais até dicas após a mudança, facilitando todo o processo para todos."
+                data-en="GoIrelandNow was created in 2024 as a college project by three students from Griffith College Cork: Karen, Thales, and Vitor. The main idea is to help people, from any country in the world, who are interested in learning more about moving to Ireland. The website provides consistent and updated information, covering everything from the initial steps to tips after you've moved, making the whole process easier for everybody.">
+                GoIrelandNow was created in 2024 as a college project by three students from Griffith College Cork:
+                Karen, Thales, and Vitor. The main idea is to help people, from any country in the world, who are
+                interested in learning more about moving to Ireland. The website provides consistent and updated
+                information, covering everything from the initial steps to tips after you've moved, making the whole
+                process easier for everybody.
+            </p>
 
             <div class="content__img__about-project">
                 <img src="../assets/images/griffith.jpg" alt="Image of Griffith College Cork Campus">
@@ -115,9 +135,12 @@
                 <a href="https://x.com/" target="_blank" class="footer__contact__link">Twitter</a>
             </div>
         </div>
-        <p class="footer-copyright">&copy; GoIrelandNow Website - 2024 | All rights reserved.</p>
-    </footer> 
+        <p class="footer-copyright" data-pt="&copy; GoIrelandNow Website - 2024 | Todos os direitos reservados."
+            data-en="&copy; GoIrelandNow Website - 2024 | All rights reserved.">&copy; GoIrelandNow Website - 2024 | All
+            rights reserved.</p>
+    </footer>
     
     <script src="../src/header-menu-dropdown.js"></script>
 </body>
+
 </html>
