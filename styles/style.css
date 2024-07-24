@@ -3,8 +3,11 @@
 /* Importing files */
 @import './abstract/reset.css';
 @import './abstract/variables.css';
+
+/* Components */
 @import './utils/button.css';
 @import './utils/heading.css';
+@import './components/translate-buttons.css';
 
 /* Importing Components */
 @import './components/header.css';
