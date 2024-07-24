@@ -21,48 +21,69 @@
     <header class="header">
         <a class="header__logo" href="#">
             <img class="header__logo--icon" src="./assets/icons/logo-bg-transparent.png" alt="Logo of the WebSite">
-            <p class="header__logo--website">GoIrelandNow</p>
+            <p class="header__logo--website" lang="en">GoIrelandNow</p>
         </a>
         <div class="header__menu">
-            <p class="header__menu__dropdown">Services</p>
+            <p class="header__menu__dropdown" data-pt="Serviços" data-en="Services">Services</p>
             <nav class="header__menu-nav__dropdown">
                 <div class="nav-container">
                     <h2>About</h2>
-                    <a href="./pages/about-us.html">About Creators</a>
-                    <a href="./pages/about-project.html">About the Project</a>
+                    <a href="./pages/about-us.html" data-pt="Sobre Criadores" data-en="About Creators">About
+                        Creators</a>
+                    <a href="./pages/about-project.html" data-en="About the Project" data-pt="Sobre o Projeto">About the
+                        Project</a>
                 </div>
                 <div class="nav-container">
                     <h2>Services</h2>
-                    <a href="./pages/visa.html">Visa</a>
-                    <a href="./pages/checklist.html">Checklist</a>
-                    <a href="./pages/must-know.html">Must-Know</a>
-                    <a href="./pages/more.html">More</a>
+                    <a href="./pages/visa.html" data-pt="Visto" data-en="Visa">Visa</a>
+                    <a href="./pages/checklist.html" lang="en">Checklist</a>
+                    <a href="./pages/must-know.html" lang="en">Must-Know</a>
+                    <a href="./pages/more.html" data-pt="Mais" data-en="More">More</a>
                 </div>
             </nav>
-            <a class="header__menu--link" href="./pages/contact-us.html">Contact Us</a>
+            <a class="header__menu--link" href="./pages/contact-us.html" data-pt="Entre em Contato"
+                data-en="Contact Us">Contact Us</a>
         </div>
 
         <img src="./assets/icons/menu-burger.png" class="header__menu-mobile" alt="Menu"></>
         <div class="header__menu-mobile__overlay"></div>
         <div class="header__menu-mobile__dropdown">
             <img class="close-button" src="assets/icons/x-icon2.png">
-            <h2>About</h2>
-            <a href="./pages/about-us.html">About Us</a>
-            <a href="./pages/about-project.html" class="lastItem">About Project</a>
-            <h2>Services</h2>
-            <a href="./pages/visa.html">Visa</a>
-            <a href="./pages/checklist.html">Checklist</a>
-            <a href="./pages/must-know.html">Must-know</a>
-            <a href="./pages/more.html" class="lastItem">More</a>
-            <a href="./pages/contact-us.html" class="header__menu--link">Contact Us</a>
+
+            <h2 data-pt="Sobre" data-en="About">About</h2>
+            <a href="./pages/about-us.html" data-pt="Sobre Nós" data-en="About Us">About Us</a>
+            <a href="./pages/about-project.html" class="lastItem" data-pt="" data-en="">About Project</a>
+
+            <h2 data-pt="Serviços" data-en="Services">Services</h2>
+            <a href="./pages/visa.html" data-pt="Visto" data-en="Visa">Visa</a>
+            <a href="./pages/checklist.html" lang="en">Checklist</a>
+            <a href="./pages/must-know.html" lang="en">Must-know</a>
+            <a href="./pages/more.html" class="lastItem" data-pt="Saiba Mais" data-en="More">More</a>
+            <a href="./pages/contact-us.html" class="header__menu--link" data-pt="Entre em Contato"
+                data-en="Contact Us">Contact Us</a>
+
         </div>
     </header>
+    <div class="translate">
+        <div class="translate-button__container">
+            <button id="en" class="translate--buttons button-active">
+                <img src="./assets/icons/uk-flag.png" alt="United Kingdom Flag">
+                <p>EN</p>
+            </button>
+            <button id="pt" class="translate--buttons ">
+                <img src="./assets/icons/brazil-flag.png" alt="Brazilian Flag">
+                <p>PT</p>
+            </button>
+        </div>
+    </div>
     <main class="main">
+
         <section class="page-header">
 
-            <h1 class="page-header__heading heading">GoIrelandNow</h1>
-            <p class="page-header__desc">Let's make it easy! Come with us!</p>
-            <a class="page-header__link button" href="#">Get Started</a>
+            <h1 class="page-header__heading heading" lang="en">GoIrelandNow</h1>
+            <p class="page-header__desc" data-pt="Vamos Juntos Nessa Nova Jornada!"
+                data-en="Let's make it easy! Come with us!">Let's make it easy! Come with us!</p>
+            <a class="page-header__link button" href="#" data-pt="Partiu" data-en="Get Started">Get Started</a>
 
             <div class="form-container">
                 <div class="overlay"></div>
@@ -70,43 +91,46 @@
                 <form class="form-popup" id="myForm">
 
                     <img class="form-close-icon" src="./assets/icons/x-icon2.png">
-                    <h2 class="form-heading">GoIrelandNow</h2>
+                    <h2 class="form-heading" lang="en">GoIrelandNow</h2>
 
-                    <label for="fname">First Name:</label>
+                    <label for="fname" data-pt="Primeiro Nome:" data-en="First Name:">First Name:</label>
                     <input type="text" placeholder="Enter your name" name="fname" required>
 
-                    <label for="sname">Surname:</label>
+                    <label for="sname" data-pt="Sobrenome" data-en="Surname">Surname:</label>
                     <input type="text" placeholder="Enter your surname" name="sname" required>
 
                     <label for="email">Email:</label>
                     <input type="email" placeholder="Enter your email" name="email"
                         pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]$" required>
 
-                    <label for="objective">Objective:</label>
+                    <label for="objective" data-pt="Objetivo:" data-en="Objective:">Objective:</label>
                     <textarea name="objective" id="objective" rows="5"
                         placeholder="Briefly explain what you are looking for"></textarea>
 
-                    <button class="form-button" type="submit">Submit</button>
+                    <button class="form-button" type="submit" data-pt="Enviar" data-en="Submit">Submit</button>
 
                 </form>
             </div>
-            <div class="confirmation-popup">Sent Successfully</div>
+            <div class="confirmation-popup" data-pt="Enviado com Sucesso" data-en="Sent Successfully">Sent Successfully
+            </div>
 
         </section>
         <section class="main-services">
-            <h2 class="main-services__heading heading">Main Services</h2>
+            <h2 class="main-services__heading heading" data-pt="Serviços Principais" data-en="Main Services">Main
+                Services</h2>
             <ul class="main-services__list">
                 <li class="main-services__item">
-                    <a href="./pages/visa.html" class="main-services__item--link">Visa</a>
+                    <a href="./pages/visa.html" class="main-services__item--link" data-pt="Vistos"
+                        data-en="Visa">Visa</a>
                 </li>
                 <li class="main-services__item">
-                    <a href="./pages/checklist.html" class="main-services__item--link">Checklist</a>
+                    <a href="./pages/checklist.html" class="main-services__item--link" lang="en">Checklist</a>
                 </li>
                 <li class="main-services__item">
-                    <a href="./pages/must-know.html" class="main-services__item--link">Must-Know</a>
+                    <a href="./pages/must-know.html" class="main-services__item--link" lang="en">Must-Know</a>
                 </li>
                 <li class="main-services__item">
-                    <a href="./pages/more.html" class="main-services__item--link">More</a>
+                    <a href="./pages/more.html" class="main-services__item--link" data-pt="Mais" data-en="More">More</a>
                 </li>
             </ul>
         </section>
@@ -116,32 +140,57 @@
                 <img src="./assets/icons/logo-bg-transparent.png" alt="Image of the logo">
             </div>
             <div class="intro__container">
-                <h2 class="intro__heading">Get to Know GIN</h2>
-                <p class="intro__desc">GoIrelandNow was created in 2024 as a college project by three students: Karen,
+                <h2 class="intro__heading" data-pt="Saiba Mais Sobre GIN" data-en="Get to Know GIN">Get to Know GIN</h2>
+                <p class="intro__desc" data-pt="A GoIrelandNow foi criada em 2024 como um projeto universitário por três estudantes: Karen,
+                Thales e Vitor..." data-en="GoIrelandNow was created in 2024 as a college project by three students: Karen,
+                Thales, and Vitor...">GoIrelandNow was created in 2024 as a college project by three students: Karen,
                     Thales, and Vitor...
-
                 </p>
-                <a class="intro__link button" href="./pages/about-project.html">Read More</a>
+                <a class="intro__link button" href="./pages/about-project.html" data-pt="Saiba Mais"
+                    data-en="Read More">Read More</a>
             </div>
         </section>
         <section class="content">
-            <h2 class="content__heading heading">Ireland</h2>
-            <p class="content__desc">Ireland, known as the Emerald Isle, is a land of stunning natural beauty, rich
-                history, and vibrant culture. From the lush green landscapes dotted with ancient castles to the bustling
-                cities filled with friendly locals, Ireland offers a unique and welcoming environment. The breathtaking
+            <h2 class="content__heading heading" data-pt="Irlanda" data-en="Ireland">Ireland</h2>
+            <p class="content__desc"
+                data-pt="A Irlanda, conhecida como a Ilha Esmeralda, é uma terra de beleza natural deslumbrante, história rica e cultura vibrante. Desde as paisagens verdejantes pontilhadas de castelos antigos até às cidades movimentadas repletas de habitantes simpáticos, a Irlanda oferece um ambiente único e acolhedor. As deslumbrantes
+            As deslumbrantes falésias de Moher, os serenos lagos de Killarney e as paisagens costeiras são apenas alguns exemplos do cenário pitoresco que o espera. Quer seja um aventureiro à procura de explorar o grande
+            ao ar livre ou um citadino que procura o encanto das ruas históricas de Dublin, a Irlanda tem algo para todos."
+                data-en="Ireland, known as the Emerald Isle, is a land of stunning natural beauty, rich history, and vibrant culture. From the lush green landscapes dotted with ancient castles to the bustling cities filled with friendly locals, Ireland offers a unique and welcoming environment. The breathtaking
+            cliffs of Moher, the serene lakes of Killarney, and the scenic coastal drives are just a few examples of the picturesque scenery that awaits you. Whether you're an adventurer looking to explore the great
+            outdoors or a city dweller seeking the charm of Dublin's historic streets, Ireland has something for everyone.">
+                Ireland, known as the Emerald Isle, is a land of stunning natural beauty, rich history, and vibrant
+                culture. From the lush green landscapes dotted with ancient castles to the bustling cities filled with
+                friendly locals, Ireland offers a unique and welcoming environment. The breathtaking
                 cliffs of Moher, the serene lakes of Killarney, and the scenic coastal drives are just a few examples of
                 the picturesque scenery that awaits you. Whether you're an adventurer looking to explore the great
                 outdoors or a city dweller seeking the charm of Dublin's historic streets, Ireland has something for
                 everyone.</p><br>
-            <p class="content__desc">Ireland's culture is as rich and inviting as its landscapes. With a history that
-                spans thousands of years, Ireland is home to many ancient sites, including the famous Newgrange passage
+
+            <p class="content__desc" data-pt="A cultura da Irlanda é tão rica e convidativa como as suas paisagens. Com uma história que se estende por milhares de anos, a Irlanda é o lar de muitos sítios antigos, incluindo a famosa passagem de Newgrange
+            túmulo de Newgrange e o Rochedo de Cashel. O país é também conhecido pela sua música, dança e literatura. As sessões de música tradicional irlandesa podem ser encontradas em pubs acolhedores por todo o país, onde pode desfrutar de
+            onde pode desfrutar de melodias animadas e de uma hospitalidade calorosa. Além disso, a Irlanda produziu alguns dos maiores escritores do mundo, como James Joyce, W.B. Yeats e Seamus Heaney, cujas obras continuam a inspirar e
+            continuam a inspirar e cativar os leitores de todo o mundo." data-en="Ireland's culture is as rich and inviting as its landscapes. With a history that spans thousands of years, Ireland is home to many ancient sites, including the famous Newgrange passage
+            tomb and the Rock of Cashel. The country is also renowned for its music, dance, and literature. Traditional Irish music sessions can be found in cozy pubs across the country, where you can enjoy
+            lively tunes and warm hospitality. Additionally, Ireland has produced some of the world's greatest writers, such as James Joyce, W.B. Yeats, and Seamus Heaney, whose works continue to inspire and
+            captivate readers globally.">
+                Ireland's culture is as rich and inviting as its landscapes. With a history that spans thousands of
+                years, Ireland is home to many ancient sites, including the famous Newgrange passage
                 tomb and the Rock of Cashel. The country is also renowned for its music, dance, and literature.
                 Traditional Irish music sessions can be found in cozy pubs across the country, where you can enjoy
                 lively tunes and warm hospitality. Additionally, Ireland has produced some of the world's greatest
                 writers, such as James Joyce, W.B. Yeats, and Seamus Heaney, whose works continue to inspire and
                 captivate readers globally.</p><br>
-            <p class="content__desc">The Irish people are known for their friendliness and hospitality, making it easy
-                for newcomers to feel at home. Ireland's thriving economy and high quality of life make it an attractive
+
+            <p class="content__desc"
+                data-pt="Os irlandeses são conhecidos pela sua simpatia e hospitalidade, o que faz com que os recém-chegados se sintam facilmente em casa. A economia próspera e a elevada qualidade de vida da Irlanda tornam-na um destino atrativo
+            destino atrativo para quem procura novas oportunidades. O país possui excelentes instituições de ensino, um forte sistema de saúde e um mercado de trabalho vibrante, especialmente em sectores como a tecnologia, a indústria farmacêutica e as finanças. Mudar-se para a Irlanda significa tornar-se parte de uma comunidade muito unida que valoriza a tradição e a inovação, oferecendo uma mistura perfeita entre o charme do velho mundo e a vida moderna. Junte-se a nós
+            na Irlanda e experimente o calor, a beleza e as oportunidades que este país extraordinário tem para oferecer."
+                data-en="The Irish people are known for their friendliness and hospitality, making it easy for newcomers to feel at home. Ireland's thriving economy and high quality of life make it an attractive
+            destination for those seeking new opportunities. The country boasts excellent educational institutions, a strong healthcare system, and a vibrant job market, particularly in sectors such as technology, pharmaceuticals, and finance. Moving to Ireland means becoming part of a close-knit community that values tradition and innovation, offering a perfect blend of old-world charm and modern living. Join us
+            in Ireland, and experience the warmth, beauty, and opportunities that this extraordinary country has to offer.">
+                The Irish people are known for their friendliness and hospitality, making it easy for newcomers to feel
+                at home. Ireland's thriving economy and high quality of life make it an attractive
                 destination for those seeking new opportunities. The country boasts excellent educational institutions,
                 a strong healthcare system, and a vibrant job market, particularly in sectors such as technology,
                 pharmaceuticals, and finance. Moving to Ireland means becoming part of a close-knit community that
@@ -154,7 +203,8 @@
             </div>
         </section>
         <aside class="social-media">
-            <h2 class="social-media__heading heading">Follow Us on Social Media</h2>
+            <h2 class="social-media__heading heading" data-pt="Siga Nossas Redes Sociais"
+                data-en="Follow Us on Social Media">Follow Us on Social Media</h2>
             <div class="social-media__container">
                 <a class="social-media__card instagram-card" href="https://www.instagram.com/" target="_blank">
                     <img src="./assets/icons/instagram-icon.png" alt="Logo of the Instagram">
@@ -180,29 +230,32 @@
                 </a>
                 <a href="https://buymeacoffee.com/" target="_blank" class="footer__logo__container">
                     <img class="footer__logo--icon" src="./assets/icons/coffee.png" alt="Buy us a coffee">
-                    <p class="footer__logo--website">Buy us a Coffee</p>
+                    <p class="footer__logo--website" data-pt="Colabore" data-en="Buy us a Coffee">Buy us a Coffee</p>
                 </a>
             </div>
             <div class="footer__services">
-                <h2 class="footer__services__heading">Services</h2>
-                <a href="./pages/visa.html" class="footer__services__link">Visa</a>
+                <h2 class="footer__services__heading" data-pt="" data-en="">Services</h2>
+                <a href="./pages/visa.html" class="footer__services__link" data-pt="Visto" data-en="Visa">Visa</a>
                 <a href="./pages/checklist.html" class="footer__services__link">Checklist</a>
                 <a href="./pages/must-know.html" class="footer__services__link">Must-Know</a>
-                <a href="./pages/more.html" class="footer__services__link">More</a>
+                <a href="./pages/more.html" class="footer__services__link" data-pt="Mais" data-en="More">More</a>
 
             </div>
             <div class="footer__contact">
-                <h2 class="footer__contact__heading">Contact</h2>
+                <h2 class="footer__contact__heading" data-pt="" data-en="">Contact</h2>
                 <a href="https://www.instagram.com/" target="_blank" class="footer__contact__link">Instagram</a>
                 <a href="https://www.facebook.com/" target="_blank" class="footer__contact__link">Facebook</a>
                 <a href="https://x.com/" target="_blank" class="footer__contact__link">Twitter</a>
             </div>
         </div>
-        <p class="footer-copyright">&copy; GoIrelandNow Website - 2024 | All rights reserved.</p>
+        <p class="footer-copyright" data-pt="&copy; GoIrelandNow Website - 2024 | Todos os direitos reservados."
+            data-en="&copy; GoIrelandNow Website - 2024 | All rights reserved.">&copy; GoIrelandNow Website - 2024 | All
+            rights reserved.</p>
     </footer>
 
     <script src="./src/header-menu-dropdown.js"></script>
     <script src="./src/get-started.js"></script>
+    <script src="./src/translate.js"></script>
 
 </body>
 
