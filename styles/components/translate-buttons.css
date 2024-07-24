@@ -33,7 +33,7 @@
     width: 15px;
 }
 
-.translate--buttons p {
+.translate--buttons span {
     color: white;
     font-size: 1rem;
     font-weight: 600;
@@ -110,7 +110,7 @@
         padding: 4px 7px;
     
     }
-    .translate--buttons p {
+    .translate--buttons span {
         font-size: 0.9rem;
     }
 }
