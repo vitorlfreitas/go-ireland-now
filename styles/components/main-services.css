@@ -26,7 +26,6 @@
     font-size: 1.6rem;
     color: var(--font-color);
     position: relative;
-    z-index: 10px; 
 }
 .main-services__item--link::after {
     content: '';
