@@ -1,7 +1,7 @@
 /* Importing Components */
 @import './social-media.css';
 @import '../abstract/variables.css';
-
+/* General styles for the content */
 .intro-pages {
     background-color: var(--bg-intro-section);
     width: 100vw;
@@ -21,9 +21,7 @@
     font-weight: 500;
     font-style: normal;
     text-shadow: 0 0 5px black;
-
 }
-
 .content {
     background-color: var(--white);
     color: var(--font-color);
@@ -103,7 +101,6 @@
     transform: scaleX(1);
     transform-origin: left;
 }
-
 /* About-us modification */
 .about-us__content {
     padding-top: 0;
@@ -114,22 +111,18 @@
     .intro-pages {
         height: 250px;
         padding: 15px 0;
-
     }
     .intro-pages__heading {
         font-size: 8rem;
     }
 }
-
 /* Ipads and Large Screens */
 @media all and (max-width: 1100px)  and (min-height: 1000px) and (max-height: 1400px) {
     .intro-pages__heading {
         font-size: 8rem;
     }
 }
-
 @media all and (max-width: 1100px)  and (max-height: 800px) {
-
     .intro-pages {
         height: 250px;
     }
@@ -143,7 +136,6 @@
     }
 }
 @media all and (max-width: 900px) {
-
     .content {
         padding: 30px 10px;
     }
@@ -152,19 +144,15 @@
     }
     .content__desc, .content__desc-list {
         font-size: 1.125rem;
-
     }
     .intro-pages {
         padding: 15px 0;
-
     }
     .intro-pages__heading {
         font-size: 6rem;
-    }
-    
+    }    
 }
 @media all and (max-width: 600px) {
-
     .content {
         padding: 10px 15px;
     }
@@ -174,32 +162,25 @@
     }
     .content__desc, .content__desc-list {
         font-size: .925rem;
-
     }
     .intro-pages {
         flex-direction: column;
         gap: 0px;
         padding: 100px 0 10px 0px;
-        height: fit-content;
-    
+        height: fit-content;    
     }
     .intro-pages__heading {
         font-size: 3rem;
         text-align: center;
-
-    }
-    
+    }   
     .content__img{
         display: block;
         width: 100%;
         margin-top: 25px;
-
     }
-
     .photo{
         display: block;
         width: 100%;
         margin-top: 25px;
-    }
-    
+    }    
 }

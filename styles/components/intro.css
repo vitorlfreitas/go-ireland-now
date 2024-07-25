@@ -1,18 +1,14 @@
 @import '../abstract/variables.css';
-
+/* General styles for the intro section */
 .intro {
     background-color: var(--bg-intro-section);
     width: 100vw;
-
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-
     padding: 20px 0;
-
     color: var(--cream);
-
 }
 .intro__img,
 .intro__container {
@@ -53,7 +49,7 @@
     margin-top: 10px;
     
 }
-
+/* Media query for different screens*/
 @media all and (max-width: 850px) {
     .intro {
         padding: 30px 0;
@@ -64,26 +60,22 @@
         width: 320px;
         height: 250px;
     }
-    
     .intro__heading {
         font-size: 2.2rem;
     }
     .intro__desc {
         font-size: 1.125rem;
     }
-
 }
 @media all and (max-width: 550px) {
     .intro {
         flex-direction: column;
         gap: 0px;
-    
     }
     .intro__img {
         width: 80px;
         height: 80px;
     }
-    
     .intro__container {
         width: auto;
         height: auto;
@@ -93,7 +85,6 @@
     }   
     .intro__heading {
         font-size: 1.8rem;
-
     }
     .intro__desc {
         text-align: center;
