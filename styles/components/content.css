@@ -21,7 +21,9 @@
     font-weight: 500;
     font-style: normal;
     text-shadow: 0 0 5px black;
+
 }
+
 .content {
     background-color: var(--white);
     color: var(--font-color);
@@ -135,8 +137,11 @@
         position: relative;
         top: 40px;
     }
+    .intro-pages__heading {
+        margin-top: -80px; 
+        margin-bottom: 30px;   
+    }
 }
-
 @media all and (max-width: 900px) {
 
     .content {
