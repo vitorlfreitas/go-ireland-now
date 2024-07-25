@@ -1,20 +1,16 @@
 @import '../abstract/variables.css';
-
+/* General styles for the social media section */
 .social-media {
     width: 100vw;
     margin: auto;
     text-align: center;
-
     background-color: var(--bg-social-section);
     padding: 20px 0;
-
-
 }
 .social-media__heading {
     font-size: 3rem;
     text-shadow: 0 0 8px var(--black-shadow);
     color: var(--cream);
-    
 }
 .social-media__container {
     display: flex;
@@ -24,19 +20,14 @@
     margin: 30px 0;
     padding: 0 10px;
 }
-
 .social-media__card {
     display: flex;
     justify-content: center;
     align-items: center;
-
     gap: 10px;
     width: 200px;
-
-
     padding: 20px 0;
     background-color: var(--cream);
-
     transition: transform 350ms;
 }
 .social-media__card:hover {
@@ -58,7 +49,6 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    
 }
 .facebook-card {
     box-shadow: 0 0 8px #112cf7;
@@ -68,8 +58,7 @@
     background: linear-gradient(to right, #116bd8, #1f16cb);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    
+    -webkit-background-clip: text;   
 }
 .twitter-card {
     box-shadow: 0 0 8px #eee;
@@ -79,10 +68,9 @@
     background: linear-gradient(to right, #555, #2d2e2e, #050505);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    
+    -webkit-background-clip: text;   
 }
-
+/* Media query for different screens*/
 @media all and (max-width:600px) {
     .social-media {
         padding: 10px 0;

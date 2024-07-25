@@ -1,41 +1,33 @@
 @import '../abstract/variables.css';
-
+/* General styles for the header section */
 .header {
     position: fixed;
     width: 100vw;    
     top: 0;
     z-index: 9999999999;
-    
     background: var(--cream);
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 6px 20px;
-
     box-shadow: 0 5px 6px var(--black-shadow);
 }
-
 .header__logo {
     display: flex;
     align-items: center;
     gap: 5px;
     font-size: 1.8rem;
 }
-
 .header__logo--icon {
     width: 45px;
 }
-
 .header__logo--website {
     font-family: "Outfit", sans-serif;
     text-decoration: none;
     background: linear-gradient(to right, var(--apple-green2),var(--apple-green), var(--lime));
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    
+    -webkit-background-clip: text;    
 }
 .header__menu {
     position: relative;
@@ -44,7 +36,6 @@
     gap: 45px;
     font-size: 1.4rem;
     color: var(--grey);
-
 }
 .header__menu__dropdown {
     position: relative;
@@ -89,26 +80,21 @@
     transform: scale(1);
 }
 .header__menu-nav__dropdown {
-
     width: fit-content;
     position: absolute;
     top: 120%;
     right: 0%;
-
     display: flex;
     justify-content: center;
     gap: 40px;
-
     transform: scaleY(0);
     transform-origin: top;
     transition: transform 350ms;
     transition-delay: 350ms;
-
     background-color: var(--cream);
     box-shadow: 0 5px 5px var(--black-shadow);
     padding: 15px 20px;
     border-radius: 0 0 8px 8px;
-
 }
 .nav-container {
     width: fit-content;
@@ -120,18 +106,13 @@
     color: var(--font-black);
     opacity: 0.6;
 }
-
 .header__menu-nav__dropdown a {
-
     position: relative;
     display: block;
-    margin-top: 10px;
-    
+    margin-top: 10px;    
     color: var(--grey);
     font-size: 1.4rem;
     width: fit-content;
-
-
 }
 .header__menu-nav__dropdown a::after {
     content: '';
@@ -144,21 +125,18 @@
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 350ms;
-
 }
 .header__menu-nav__dropdown a:hover::after {
     transform: scaleX(1);
     transform-origin: left;
 }
-
 .header__menu-mobile,
 .header__menu-mobile__overlay,
 .header__menu-mobile__dropdown {
     display: none;
 }
-
+/* Media query for different screens*/
 @media all and (max-width: 600px) {
-
     .header__logo--website {
         display: none;
     }
@@ -176,7 +154,6 @@
         top: 0%;
         right: 0%;
         background-color: rgba(0, 0, 0, 0.6);
-
         display: none;
         opacity: 0;
         transition: opacity 350ms;
@@ -187,43 +164,31 @@
         height: 100vh;
         top: 0%;
         right: 0%;
-
         background-color: var(--cream);
         padding: 45px 30px;
-        
-
         display: none;
         flex-direction: column;
         gap: 15px;
-
         transform: scaleX(0);
         transform-origin: right;
         transition: transform 350ms ease-out;
     }
-
     .close-button {
         position: absolute;
         left: 85%;
         top: 2%;
         width: 25px;
     }
-
     .header__menu-mobile__dropdown h2 {
         text-align: center;
         color: var(--grey);
-
     }
-
     .header__menu-mobile__dropdown a {
         font-size: 1.5rem;
         color: var(--font-black);
         font-weight: 400;
     } 
-
-
     .header__menu-mobile__dropdown > .lastItem {
         margin-bottom: 40px;
     }
-
-
 }

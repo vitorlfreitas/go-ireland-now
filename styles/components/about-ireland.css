@@ -1,12 +1,10 @@
 @import '../abstract/variables.css';
-
+/* General styles for the about ireland section */
 .about-ireland {
     background-color: var(--white);
     color: var(--font-color);
-
     max-width: 680px;
     margin: auto;
-
     padding: 40px 0;
 }
 .about-ireland__heading {

@@ -1,5 +1,5 @@
 @import '../abstract/variables.css';
-
+/* General styles for the footer section */
 .footer {
     width: 100%;
     text-align: center;
@@ -10,7 +10,6 @@
 .footer__container {
     width: 80%;
     margin: auto;
-
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -20,20 +19,17 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-
 }
 .footer__logo__container {
     border-radius: 8px;
     box-shadow: 0 0 5px var(--apple-green2);
     padding: 4px 0;
     width: 250px;
-
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
     padding-left: 5px;
-
     position: relative;
 }
 .footer__logo__container::after {
@@ -43,7 +39,6 @@
     width: 100%;
     top: 0;
     left: 0;
-    
     /* Change After */
     background-color: #3333331a;
     border-radius: 8px;
@@ -69,7 +64,6 @@
 .footer__services__heading,
 .footer__contact__heading {
     color: #888;
-
 }
 .footer__services a,
 .footer__contact a {
@@ -78,9 +72,7 @@
     font-size: 1.1rem;
     color: #333;
     width: fit-content;
-
-    position: relative;
-    
+    position: relative;    
 }
 .footer__services a::after,
 .footer__contact a::after  {
@@ -108,12 +100,11 @@
 .margin-top-20 {
     margin-top: 20px;
 }
-
+/* Media query for different screens*/
 @media all and (max-width: 600px) {
     .footer__container {
         width: 100%;
-        margin: auto;
-        
+        margin: auto;        
         gap: 25px;
         display: grid;
         grid-template-columns: 15vw 1fr 1fr 10vw;
@@ -129,14 +120,11 @@
     .footer__services {
         justify-self: start;
         grid-area: service1;
-
     }
     .footer__contact {
         justify-self: start;
         grid-area: service2;
-
     }
-
     .footer-copyright {
         font-size: 0.825rem;
     }

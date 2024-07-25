@@ -2,72 +2,58 @@
 
 
 :root {
-
   --white: #fff;
   --black: #111;
   --font-black: #333;
   --font-color: #283618;
   --footer-font: #333;
-
   --cream: #f0f3bd;
   --orange: #fb6107;
   --apple-green: #76b518;
   --apple-green2: #a5be00;
   --lime: #5c8001;
   --light-green: #4CAF50;
-
   --grey: #555;
-
   /* Backgrounds */
   --bg-pg-header: #283618;
   --bg-intro-section: #283618;
-  --bg-social-section: #283618;
-  
+  --bg-social-section: #283618; 
   --selection: rgb(2, 53, 2);
-
   /* Shadow */
   --black-shadow: rgba(0, 0, 0, 0.450);
-
 }
 
-/*IS IT NECESSARY???  Imports of fonts family from Google fonts, weight 400, variable styles*/
+/*Imports of fonts family from Google fonts, weight 400, variable styles*/
 .yellowtail-regular {
   font-family: "Yellowtail", cursive;
   font-weight: 400;
   font-style: normal;
 }
-
 .special-elite-regular {
   font-family: "Special Elite", system-ui;
   font-weight: 400;
   font-style: normal;
 }
-
 .outfit {
   font-family: "Outfit", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
-
 .atkinson-hyperlegible-regular {
   font-family: "Atkinson Hyperlegible", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
-
 .atkinson-hyperlegible-bold {
   font-family: "Atkinson Hyperlegible", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
-
 .atkinson-hyperlegible-regular-italic {
   font-family: "Atkinson Hyperlegible", sans-serif;
   font-weight: 400;
   font-style: italic;
 }
-
 .atkinson-hyperlegible-bold-italic {
   font-family: "Atkinson Hyperlegible", sans-serif;
   font-weight: 700;

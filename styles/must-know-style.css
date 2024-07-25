@@ -17,10 +17,8 @@
 .must-know {
     background-color: var(--white);
     color: var(--font-color);
-
     max-width: 680px;
     margin: auto;
-
     padding: 40px 0;
 }
 .must-know__heading {
@@ -72,18 +70,15 @@
 @media all and (max-width: 850px) {
     .must-know {
         padding: 30px 10px;
-
     }
     .must-know__img, .photo {
         width: 80px;
         height: 80px;
-    }
-    
+    }   
     .must-know__container {
         width: 320px;
         height: 250px;
-    }
-    
+    }   
     .must-know__heading {
         font-size: 2.2rem;
         margin-top: 15px;
@@ -91,20 +86,17 @@
     .must-know__desc {
         font-size: 1.125rem;
     }
-
 }
 @media all and (max-width: 550px) {
     .must-know {
         flex-direction: column;
         gap: 0px;
-        padding: 10px 15px;
-    
+        padding: 10px 15px;    
     }
     .must-know__img, .photo {
         width: 80px;
         height: 80px;
-    }
-    
+    }    
     .must-know__container {
         width: auto;
         height: auto;
@@ -115,11 +107,9 @@
     .must-know__heading {
         font-size: 1.75rem;
         margin-top: 5px;
-
     }
     .must-know__desc {
         text-align: center;
         font-size: .925rem;
-
     }
 }

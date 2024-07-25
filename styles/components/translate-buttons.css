@@ -1,29 +1,23 @@
-
+/* General styles for the translate section */
 .translate {
-
     position: absolute;
     top: 10vh;
     left: 85%;
     z-index: 9999;
-
 }
 .translate-button__container {
     display: flex;
     gap: 20px;
 }
-
 .translate--buttons {
     display: flex;
     align-items: center;
     gap: 5px;
-
     background-color: transparent;
     border: 1px solid white;
     border-radius: 8px;
     padding: 5px 9px;
-
     transition: opacity 150ms;
-
 }
 .translate--buttons:hover {
     cursor: pointer;
@@ -32,94 +26,69 @@
 .translate--buttons img {
     width: 15px;
 }
-
 .translate--buttons span {
     color: white;
     font-size: 1rem;
     font-weight: 600;
 }
-
 .translate-button__container .button-active {
     background-color: rgba(206, 206, 206, 0.35);
     border: 2px solid white;
 }
-
+/* Media query for different screens*/
 @media all and (max-width: 1100px)  and (min-height: 1400px) {
-    
     .translate {
-
         top: 4.8vh;
         left: 80vw;
-
     }
 }
-
 @media all and (max-width: 1024px) and (min-height: 1200px) and (max-height: 1400px) {
     .translate {
-
         top: 6.5vh;
         left: 80vw;
-
     }
 }
-
 @media all and (min-width: 600px) and (max-width: 1024px)
              and (min-height: 1100px) and (max-height: 1400px) {
     .translate {
-
         top: 6vh;
         left: 72vw;
-
     }
 }
-
 @media screen and (min-width: 600px) and (max-width: 940px) 
                 and (min-height: 450px) and (max-height: 1000px) {
-
     .translate {
-
         top: 8vh;
         left: 75%;
-
     }
 }
-
 @media screen and (min-width: 600px) and (max-width: 940px) and (max-height: 650px) {
     .translate {
-
         top: 15vh;
         left: 75%;
-
     }
 }
-
-
 @media screen and (min-width: 600px) and (max-width: 940px) and (max-height: 450px) {
     .translate {
-
         top: 18vh;
         left: 80%;
-
     }
     .translate-button__container {
         display: flex;
         gap: 10px;
     }
-    
+
     .translate--buttons {
         padding: 4px 7px;
-    
     }
     .translate--buttons span {
         font-size: 0.9rem;
     }
 }
-
 @media all and (max-width: 600px) {
     .translate {
         transform: scale(0.6);
         top: 8vh;
         left: 66%;
-     
     }
 }
